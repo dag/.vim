@@ -1,0 +1,39 @@
+[submodule "bundle/dag/cabal"]
+	path = bundle/dag/cabal
+	url = https://github.com/dag/vim-cabal
+[submodule "bundle/dag/fish"]
+	path = bundle/dag/fish
+	url = https://github.com/dag/vim-fish
+[submodule "bundle/dag/haskell"]
+	path = bundle/dag/haskell
+	url = https://github.com/dag/vim-haskell
+[submodule "bundle/junegunn/easy-align"]
+	path = bundle/junegunn/easy-align
+	url = https://github.com/junegunn/vim-easy-align
+[submodule "bundle/justinmk/sneak"]
+	path = bundle/justinmk/sneak
+	url = https://github.com/justinmk/vim-sneak
+[submodule "bundle/tpope/commentary"]
+	path = bundle/tpope/commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "bundle/tpope/eunuch"]
+	path = bundle/tpope/eunuch
+	url = https://github.com/tpope/vim-eunuch
+[submodule "bundle/tpope/fugitive"]
+	path = bundle/tpope/fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "bundle/tpope/repeat"]
+	path = bundle/tpope/repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "bundle/tpope/scriptease"]
+	path = bundle/tpope/scriptease
+	url = https://github.com/tpope/vim-scriptease
+[submodule "bundle/tpope/surround"]
+	path = bundle/tpope/surround
+	url = https://github.com/tpope/vim-surround
+[submodule "bundle/tpope/unimpaired"]
+	path = bundle/tpope/unimpaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule "bundle/vim-scripts/vylight"]
+	path = bundle/vim-scripts/vylight
+	url = https://github.com/vim-scripts/vylight
