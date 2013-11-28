@@ -6,7 +6,8 @@ if has('vim_starting')
   let [&fileencodings, &ttyfast] = s:options
   unlet s:options
 
-  set runtimepath=$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after
+  set runtimepath=$VIMRUNTIME
+  set runtimepath^=$VIM/vimfiles runtimepath+=$VIM/vimfiles/after
   set runtimepath^=~/.vim/bundle/*/* runtimepath+=~/.vim/bundle/*/*/after
   set runtimepath^=~/.vim runtimepath+=~/.vim/after
 endif
