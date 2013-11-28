@@ -1,6 +1,6 @@
 set guicursor&
 set guifont&
-set guioptions=aAc
+set guioptions=aAcM
 
 augroup GVIMRC
   autocmd!
