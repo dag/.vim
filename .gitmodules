@@ -13,6 +13,12 @@
 [submodule "bundle/justinmk/sneak"]
 	path = bundle/justinmk/sneak
 	url = https://github.com/justinmk/vim-sneak
+[submodule "bundle/shougo/unite"]
+	path = bundle/shougo/unite
+	url = https://github.com/Shougo/unite.vim
+[submodule "bundle/shougo/vimproc"]
+	path = bundle/shougo/vimproc
+	url = https://github.com/Shougo/vimproc
 [submodule "bundle/tpope/commentary"]
 	path = bundle/tpope/commentary
 	url = https://github.com/tpope/vim-commentary
