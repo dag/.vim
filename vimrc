@@ -67,11 +67,19 @@ augroup END
 cnoremap <C-n> <Down>
 cnoremap <C-p> <Up>
 inoremap <C-c> <Esc>
+
 nnoremap <Bar> gT
 nnoremap <Bslash> gt
+
 nnoremap h <C-w>
 nnoremap j i<CR><Esc>
+nnoremap k <Nop>
 nnoremap l <Nop>
+
+nnoremap kb :<C-u>Unite -no-split -buffer-name=buffer buffer<CR>
+nnoremap kf :<C-u>Unite -no-split -buffer-name=file file<CR>
+nnoremap kr :<C-u>Unite -no-split -buffer-name=rec file_rec/async<CR>
+nnoremap ku :<C-u>Unite -no-split -buffer-name=undo undo<CR>
 
 filetype plugin indent on
 syntax enable
