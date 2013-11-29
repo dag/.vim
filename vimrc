@@ -50,6 +50,8 @@ let g:netrw_bufsettings = 'noma nomod nonu nornu nowrap ro nobl nolist'
 let g:netrw_hide = 1
 let g:netrw_list_hide = '\~$,\.swp$'
 let g:sneak#map_netrw = 0
+let g:unite_split_rule = 'botright'
+let g:unite_winheight = 10
 let g:vim_indent_cont = 2
 
 augroup VIMRC
@@ -78,10 +80,16 @@ nnoremap j i<CR><Esc>
 nnoremap k <Nop>
 nnoremap l <Nop>
 
-nnoremap kb :<C-u>Unite -no-split -buffer-name=buffer buffer<CR>
-nnoremap kf :<C-u>Unite -no-split -buffer-name=file file<CR>
-nnoremap kr :<C-u>Unite -no-split -buffer-name=rec file_rec/async<CR>
-nnoremap ku :<C-u>Unite -no-split -buffer-name=undo undo<CR>
+nnoremap <silent> kb :<C-u>Unite -buffer-name=buffer -no-split buffer<CR>
+nnoremap <silent> kc :<C-u>Unite -buffer-name=change -no-split change<CR>
+nnoremap <silent> kd :<C-u>Unite -buffer-name=directory -no-split -default-action=lcd directory directory/new<CR>
+nnoremap <silent> kf :<C-u>Unite -buffer-name=file -no-split file file/new<CR>
+nnoremap <silent> kj :<C-u>Unite -buffer-name=jump -no-split jump<CR>
+nnoremap <silent> kl :<C-u>Unite -buffer-name=line -no-split line<CR>
+nnoremap <silent> kr :<C-u>Unite -buffer-name=rec -no-split file_rec/async<CR>
+nnoremap <silent> kt :<C-u>Unite -buffer-name=tab tab<CR>
+nnoremap <silent> ku :<C-u>Unite -buffer-name=undo -no-split undo<CR>
+nnoremap <silent> kw :<C-u>Unite -buffer-name=window window<CR>
 
 filetype plugin indent on
 syntax enable
