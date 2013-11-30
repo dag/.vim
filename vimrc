@@ -12,6 +12,10 @@ if has('vim_starting')
   set runtimepath^=~/.vim runtimepath+=~/.vim/after
 endif
 
+augroup VIMRC
+  autocmd!
+augroup END
+
 set autoindent
 set autoread
 set backspace=eol
@@ -44,29 +48,32 @@ let &showbreak = "\u2026"
 
 let g:mapleader = '|'
 let g:maplocalleader = '\'
+
 let g:netrw_banner = 0
 let g:netrw_browsex_viewer = 'xdg-open'
 let g:netrw_bufsettings = 'noma nomod nonu nornu nowrap ro nobl nolist'
 let g:netrw_hide = 1
 let g:netrw_list_hide = '\~$,\.swp$'
+
 let g:sneak#map_netrw = 0
+
 let g:unite_split_rule = 'botright'
 let g:unite_winheight = 10
+
 let g:vim_indent_cont = 2
 
-augroup VIMRC
-  autocmd!
+autocmd VIMRC FileType cabal,haskell compiler cabal
+autocmd VIMRC FileType fish compiler fish
+autocmd VIMRC FileType xml compiler xmllint
 
-  autocmd FileType cabal,haskell compiler cabal
-  autocmd FileType fish compiler fish
-  autocmd FileType xml compiler xmllint
+autocmd VIMRC FileType cabal,haskell setlocal expandtab shiftwidth=4
+autocmd VIMRC FileType vim,xml setlocal expandtab shiftwidth=2
 
-  autocmd FileType cabal,haskell setlocal expandtab shiftwidth=4
-  autocmd FileType vim,xml setlocal expandtab shiftwidth=2
+autocmd VIMRC FileType fish setlocal foldmethod=expr
+autocmd VIMRC FileType vim setlocal foldmethod=marker
 
-  autocmd FileType fish setlocal foldmethod=expr
-  autocmd FileType vim setlocal foldmethod=marker
-augroup END
+filetype plugin indent on
+syntax enable
 
 nnoremap <Leader> <Nop>
 nnoremap <LocalLeader> <Nop>
@@ -93,6 +100,3 @@ nnoremap <silent> kr :<C-u>Unite -buffer-name=rec -no-split file_rec/async<CR>
 nnoremap <silent> kt :<C-u>Unite -buffer-name=tab tab<CR>
 nnoremap <silent> ku :<C-u>Unite -buffer-name=undo -no-split undo<CR>
 nnoremap <silent> kw :<C-u>Unite -buffer-name=window window<CR>
-
-filetype plugin indent on
-syntax enable
