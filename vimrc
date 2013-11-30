@@ -42,8 +42,8 @@ let &foldlevelstart = 99
 let &listchars = "eol:\u21b5,tab:\u21e5 ,trail:\u2423,extends:\u203a,precedes:\u2039,nbsp:\u25fb"
 let &showbreak = "\u2026"
 
-let g:mapleader = 'l'
-let g:maplocalleader = 'll'
+let g:mapleader = '|'
+let g:maplocalleader = '\'
 let g:netrw_banner = 0
 let g:netrw_browsex_viewer = 'xdg-open'
 let g:netrw_bufsettings = 'noma nomod nonu nornu nowrap ro nobl nolist'
@@ -68,12 +68,15 @@ augroup VIMRC
   autocmd FileType vim setlocal foldmethod=marker
 augroup END
 
+nnoremap <Leader> <Nop>
+nnoremap <LocalLeader> <Nop>
+
 cnoremap <C-n> <Down>
 cnoremap <C-p> <Up>
 inoremap <C-c> <Esc>
 
-nnoremap <Bar> gT
-nnoremap <Bslash> gt
+nnoremap - gt
+nnoremap _ gT
 
 nnoremap h <C-w>
 nnoremap j i<CR><Esc>
