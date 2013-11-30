@@ -83,6 +83,7 @@ cnoremap <C-p> <Up>
 inoremap <C-c> <Esc>
 
 nnoremap - gt
+nnoremap + gt
 nnoremap _ gT
 
 nnoremap h <C-w>
