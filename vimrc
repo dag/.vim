@@ -22,7 +22,7 @@ set backspace=eol
 set clipboard^=autoselectml clipboard^=unnamedplus
 set guioptions+=M
 set history=1000
-set list
+set linebreak
 set listchars=eol:$,tab:>-,trail:_,extends:>,precedes:<,nbsp:+
 set notimeout
 set ruler
