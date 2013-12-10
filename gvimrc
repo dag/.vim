@@ -1,11 +1,14 @@
+"{{{1 INIT
 augroup GVIMRC
   autocmd!
 augroup END
 
+"{{{1 OPTIONS
 set guicursor&
 set guifont&
 set guioptions=aAcM
 
+"{{{1 COLORS
 autocmd GVIMRC ColorScheme
   \ * if g:colors_name ==# 'vylight'
   \ |   highlight Subtle guifg=#dfdfdf

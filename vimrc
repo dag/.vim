@@ -1,3 +1,4 @@
+"{{{1 INIT
 if has('vim_starting')
   filetype off
 
@@ -16,6 +17,7 @@ augroup VIMRC
   autocmd!
 augroup END
 
+"{{{1 OPTIONS
 set autoindent
 set autoread
 set backspace=eol
@@ -46,6 +48,7 @@ let &foldlevelstart = 99
 let &listchars = "eol:\u21b5,tab:\u21e5 ,trail:\u2423,extends:\u203a,precedes:\u2039,nbsp:\u25fb"
 let &showbreak = "\u2026"
 
+"{{{1 PLUGINS
 let g:mapleader = '|'
 let g:maplocalleader = '\'
 
@@ -60,6 +63,7 @@ let g:sneak#map_netrw = 0
 let g:unite_split_rule = 'botright'
 let g:unite_winheight = 10
 
+"{{{1 FILETYPES
 let g:vim_indent_cont = 2
 
 autocmd VIMRC FileType cabal,haskell compiler cabal
@@ -75,6 +79,7 @@ autocmd VIMRC FileType vim setlocal foldmethod=marker
 filetype plugin indent on
 syntax enable
 
+"{{{1 MAPPINGS
 nnoremap <Leader> <Nop>
 nnoremap <LocalLeader> <Nop>
 
