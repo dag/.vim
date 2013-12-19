@@ -76,6 +76,8 @@ autocmd VIMRC FileType vim,xml setlocal expandtab shiftwidth=2
 autocmd VIMRC FileType fish setlocal foldmethod=expr
 autocmd VIMRC FileType vim setlocal foldmethod=marker
 
+autocmd VIMRC FileType haskell setlocal omnifunc=necoghc#omnifunc
+
 filetype plugin indent on
 syntax enable
 

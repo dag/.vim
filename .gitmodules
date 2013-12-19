@@ -7,6 +7,9 @@
 [submodule "bundle/dag/haskell"]
 	path = bundle/dag/haskell
 	url = https://github.com/dag/vim-haskell
+[submodule "bundle/eagletmt/neco-ghc"]
+	path = bundle/eagletmt/neco-ghc
+	url = https://github.com/eagletmt/neco-ghc
 [submodule "bundle/junegunn/easy-align"]
 	path = bundle/junegunn/easy-align
 	url = https://github.com/junegunn/vim-easy-align
