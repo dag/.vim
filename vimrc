@@ -98,15 +98,15 @@ nnoremap j i<CR><Esc>
 nnoremap k <Nop>
 nnoremap l <Nop>
 
-nnoremap <silent> kb :<C-u>Unite -buffer-name=buffer -no-split buffer<CR>
-nnoremap <silent> kc :<C-u>Unite -buffer-name=change -no-split change<CR>
-nnoremap <silent> kd :<C-u>Unite -buffer-name=directory -no-split -default-action=lcd directory directory/new<CR>
-nnoremap <silent> kf :<C-u>Unite -buffer-name=file -no-split file file/new<CR>
-nnoremap <silent> kh :<C-u>Unite -buffer-name=haddock haddock<CR>
-nnoremap <silent> kH :<C-u>Unite -buffer-name=hoogle hoogle<CR>
-nnoremap <silent> kj :<C-u>Unite -buffer-name=jump -no-split jump<CR>
-nnoremap <silent> kl :<C-u>Unite -buffer-name=line -no-split line<CR>
-nnoremap <silent> kr :<C-u>Unite -buffer-name=rec -no-split file_rec/async<CR>
-nnoremap <silent> kt :<C-u>Unite -buffer-name=tab tab<CR>
-nnoremap <silent> ku :<C-u>Unite -buffer-name=undo -no-split undo<CR>
-nnoremap <silent> kw :<C-u>Unite -buffer-name=window window<CR>
+nnoremap <silent> lb :<C-u>Unite -buffer-name=buffer -no-split buffer<CR>
+nnoremap <silent> lc :<C-u>Unite -buffer-name=change -no-split change<CR>
+nnoremap <silent> ld :<C-u>Unite -buffer-name=directory -no-split -default-action=lcd directory directory/new<CR>
+nnoremap <silent> lf :<C-u>Unite -buffer-name=file -no-split file file/new<CR>
+nnoremap <silent> lh :<C-u>Unite -buffer-name=haddock haddock<CR>
+nnoremap <silent> lH :<C-u>Unite -buffer-name=hoogle hoogle<CR>
+nnoremap <silent> lj :<C-u>Unite -buffer-name=jump -no-split jump<CR>
+nnoremap <silent> ll :<C-u>Unite -buffer-name=line -no-split line<CR>
+nnoremap <silent> lr :<C-u>Unite -buffer-name=rec -no-split file_rec/async<CR>
+nnoremap <silent> lt :<C-u>Unite -buffer-name=tab tab<CR>
+nnoremap <silent> lu :<C-u>Unite -buffer-name=undo -no-split undo<CR>
+nnoremap <silent> lw :<C-u>Unite -buffer-name=window window<CR>
