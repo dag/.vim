@@ -102,6 +102,8 @@ nnoremap <silent> kb :<C-u>Unite -buffer-name=buffer -no-split buffer<CR>
 nnoremap <silent> kc :<C-u>Unite -buffer-name=change -no-split change<CR>
 nnoremap <silent> kd :<C-u>Unite -buffer-name=directory -no-split -default-action=lcd directory directory/new<CR>
 nnoremap <silent> kf :<C-u>Unite -buffer-name=file -no-split file file/new<CR>
+nnoremap <silent> kh :<C-u>Unite -buffer-name=haddock haddock<CR>
+nnoremap <silent> kH :<C-u>Unite -buffer-name=hoogle hoogle<CR>
 nnoremap <silent> kj :<C-u>Unite -buffer-name=jump -no-split jump<CR>
 nnoremap <silent> kl :<C-u>Unite -buffer-name=line -no-split line<CR>
 nnoremap <silent> kr :<C-u>Unite -buffer-name=rec -no-split file_rec/async<CR>
