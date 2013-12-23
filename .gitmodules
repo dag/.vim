@@ -1,3 +1,6 @@
+[submodule "bundle/bruno/vertical-move"]
+	path = bundle/bruno/vertical-move
+	url = https://github.com/bruno-/vim-vertical-move
 [submodule "bundle/dag/cabal"]
 	path = bundle/dag/cabal
 	url = https://github.com/dag/vim-cabal
