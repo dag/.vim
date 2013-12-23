@@ -44,6 +44,7 @@ elseif executable('ack')
   set grepprg=ack
 endif
 
+let &breakat = " \t,;"
 let &foldlevelstart = 99
 let &listchars = "eol:\u21b5,tab:\u21e5 ,trail:\u2423,extends:\u203a,precedes:\u2039,nbsp:\u25fb"
 let &showbreak = "\u2026"
