@@ -49,9 +49,6 @@ let &listchars = "eol:\u21b5,tab:\u21e5 ,trail:\u2423,extends:\u203a,precedes:\u
 let &showbreak = "\u2026"
 
 "{{{1 PLUGINS
-let g:mapleader = '|'
-let g:maplocalleader = '\'
-
 let g:netrw_banner = 0
 let g:netrw_browsex_viewer = 'xdg-open'
 let g:netrw_bufsettings = 'noma nomod nonu nornu nowrap ro nobl nolist'
