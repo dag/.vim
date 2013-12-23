@@ -56,8 +56,6 @@ let g:netrw_bufsettings = 'noma nomod nonu nornu nowrap ro nobl nolist'
 let g:netrw_hide = 1
 let g:netrw_list_hide = '\~$,\.swp$'
 
-let g:sneak#map_netrw = 0
-
 let g:unite_split_rule = 'botright'
 let g:unite_winheight = 10
 
