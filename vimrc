@@ -89,9 +89,13 @@ cnoremap <C-n> <Down>
 cnoremap <C-p> <Up>
 inoremap <C-c> <Esc>
 
-nnoremap - gt
-nnoremap + gt
-nnoremap _ gT
+nnoremap <Down> <C-w><Down>
+nnoremap <Left> <C-w><Left>
+nnoremap <Right> <C-w><Right>
+nnoremap <Up> <C-w><Up>
+
+nnoremap <PageDown> <C-PageDown>
+nnoremap <PageUp> <C-PageUp>
 
 nnoremap h <C-w>
 nnoremap j i<CR><Esc>
