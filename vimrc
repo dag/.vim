@@ -58,7 +58,7 @@ let g:unite_split_rule = 'botright'
 let g:unite_winheight = 10
 
 "{{{1 FILETYPES
-let g:ghcmod_ghc_options = ['-fdefer-type-errors', '-isrc', '-itest', '-itests', '-Wall']
+let g:ghcmod_ghc_options = ['-fdefer-type-errors', '-isrc:test:tests', '-Wall']
 let g:vim_indent_cont = 2
 
 autocmd VIMRC FileType cabal,haskell compiler cabal
