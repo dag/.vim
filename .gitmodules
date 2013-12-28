@@ -34,6 +34,9 @@
 [submodule "bundle/tpope/commentary"]
 	path = bundle/tpope/commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "bundle/tpope/dispatch"]
+	path = bundle/tpope/dispatch
+	url = https://github.com/tpope/vim-dispatch
 [submodule "bundle/tpope/eunuch"]
 	path = bundle/tpope/eunuch
 	url = https://github.com/tpope/vim-eunuch

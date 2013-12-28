@@ -65,6 +65,9 @@ autocmd VIMRC FileType cabal,haskell compiler cabal
 autocmd VIMRC FileType fish compiler fish
 autocmd VIMRC FileType xml compiler xmllint
 
+autocmd VIMRC FileType cabal let b:dispatch = 'cabal check'
+autocmd VIMRC FileType haskell let b:dispatch = 'ghc -fno-code -isrc:test:tests -Wall %'
+
 autocmd VIMRC FileType cabal,haskell setlocal expandtab shiftwidth=4
 autocmd VIMRC FileType vim,xml setlocal expandtab shiftwidth=2
 
@@ -96,6 +99,9 @@ nnoremap h <C-w>
 nnoremap j i<CR><Esc>
 nnoremap k <Nop>
 nnoremap l <Nop>
+
+nnoremap <silent> kd :<C-u>Dispatch<CR>
+nnoremap <silent> km :<C-u>Make<CR>
 
 nnoremap <silent> lb :<C-u>Unite -buffer-name=buffer -no-split buffer<CR>
 nnoremap <silent> lc :<C-u>Unite -buffer-name=change -no-split change<CR>
