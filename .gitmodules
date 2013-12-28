@@ -52,6 +52,9 @@
 [submodule "bundle/tpope/unimpaired"]
 	path = bundle/tpope/unimpaired
 	url = https://github.com/tpope/vim-unimpaired
+[submodule "bundle/tpope/vinegar"]
+	path = bundle/tpope/vinegar
+	url = https://github.com/tpope/vim-vinegar
 [submodule "bundle/vim-scripts/vylight"]
 	path = bundle/vim-scripts/vylight
 	url = https://github.com/vim-scripts/vylight
