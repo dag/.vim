@@ -46,8 +46,8 @@ endif
 
 let &breakat = " \t,;"
 let &foldlevelstart = 99
-let &listchars = "eol:\u21b5,tab:\u21e5 ,trail:\u2423,extends:\u203a,precedes:\u2039,nbsp:\u25fb"
-let &showbreak = "\u2026"
+let &listchars = "eol:\u23ce,tab:\u21e5 ,trail:\u2423,extends:\u203a,precedes:\u2039,nbsp:\u25fb"
+let &showbreak = " \u21aa "
 
 "{{{1 PLUGINS
 let g:netrw_browsex_viewer = 'xdg-open'
