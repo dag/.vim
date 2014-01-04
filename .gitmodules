@@ -1,6 +1,9 @@
 [submodule "bundle/bruno/vertical-move"]
 	path = bundle/bruno/vertical-move
 	url = https://github.com/bruno-/vim-vertical-move
+[submodule "bundle/christoomey/tmux-navigator"]
+	path = bundle/christoomey/tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
 [submodule "bundle/dag/cabal"]
 	path = bundle/dag/cabal
 	url = https://github.com/dag/vim-cabal

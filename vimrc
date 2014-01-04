@@ -44,6 +44,11 @@ elseif executable('ack')
   set grepprg=ack
 endif
 
+" XXX Hack for tmux in gnome-terminal
+if !empty($TMUX) && $COLORTERM ==# 'gnome-terminal'
+  execute "set t_kl=\<C-h>"
+endif
+
 let &breakat = " \t,;"
 let &foldlevelstart = 99
 let &listchars = "eol:\u23ce,tab:\u21e5 ,trail:\u2423,extends:\u203a,precedes:\u2039,nbsp:\u25fb"
@@ -53,6 +58,8 @@ let &showbreak = " \u21aa "
 let g:netrw_browsex_viewer = 'xdg-open'
 let g:netrw_bufsettings = 'noma nomod nonu nornu nowrap ro nobl nolist'
 let g:netrw_hide = 1
+
+let g:tmux_navigator_no_mappings = 1
 
 let g:unite_split_rule = 'botright'
 let g:unite_winheight = 10
@@ -87,10 +94,10 @@ cnoremap <C-n> <Down>
 cnoremap <C-p> <Up>
 inoremap <C-c> <Esc>
 
-nnoremap <Down> <C-w><Down>
-nnoremap <Left> <C-w><Left>
-nnoremap <Right> <C-w><Right>
-nnoremap <Up> <C-w><Up>
+nnoremap <silent> <Down> :<C-u>TmuxNavigateDown<CR>
+nnoremap <silent> <Left> :<C-u>TmuxNavigateLeft<CR>
+nnoremap <silent> <Right> :<C-u>TmuxNavigateRight<CR>
+nnoremap <silent> <Up> :<C-u>TmuxNavigateUp<CR>
 
 nnoremap <PageDown> <C-PageDown>
 nnoremap <PageUp> <C-PageUp>
