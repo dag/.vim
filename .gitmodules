@@ -22,6 +22,9 @@
 [submodule "bundle/eagletmt/unite-haddock"]
 	path = bundle/eagletmt/unite-haddock
 	url = https://github.com/eagletmt/unite-haddock
+[submodule "bundle/godlygeek/csapprox"]
+	path = bundle/godlygeek/csapprox
+	url = https://github.com/godlygeek/csapprox
 [submodule "bundle/junegunn/easy-align"]
 	path = bundle/junegunn/easy-align
 	url = https://github.com/junegunn/vim-easy-align

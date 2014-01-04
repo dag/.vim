@@ -17,6 +17,22 @@ augroup VIMRC
   autocmd!
 augroup END
 
+"{{{1 COLORS
+autocmd VIMRC ColorScheme
+  \ * if g:colors_name ==# 'vylight'
+  \ |   highlight! link CursorColumn CursorLine
+  \ |   highlight! link CursorLineNr ModeMsg
+  \ |   highlight! link NonText WarningMsg
+  \ |   highlight! link SneakPluginScope Visual
+  \ |   highlight! link SneakPluginTarget Search
+  \ |   highlight! link SpecialKey WarningMsg
+  \ |   highlight! link TabLine StatusLineNC
+  \ |   highlight! link TabLineSel ModeMsg
+  \ |   highlight! link TablineFill StatusLineNC
+  \ | endif
+
+colorscheme vylight
+
 "{{{1 OPTIONS
 set autoindent
 set autoread
