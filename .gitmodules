@@ -37,6 +37,9 @@
 [submodule "bundle/shougo/vimproc"]
 	path = bundle/shougo/vimproc
 	url = https://github.com/Shougo/vimproc
+[submodule "bundle/tpope/abolish"]
+	path = bundle/tpope/abolish
+	url = https://github.com/tpope/vim-abolish
 [submodule "bundle/tpope/commentary"]
 	path = bundle/tpope/commentary
 	url = https://github.com/tpope/vim-commentary
