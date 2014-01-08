@@ -31,7 +31,9 @@ autocmd VIMRC ColorScheme
   \ |   highlight! link TablineFill StatusLineNC
   \ | endif
 
-colorscheme vylight
+if has('eval')
+  colorscheme vylight
+endif
 
 "{{{1 OPTIONS
 set autoindent
