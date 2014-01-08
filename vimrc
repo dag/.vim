@@ -60,6 +60,10 @@ elseif executable('ack')
   set grepprg=ack
 endif
 
+if has('mouse')
+  set mouse=a
+endif
+
 " XXX Hack for tmux in gnome-terminal
 if !empty($TMUX) && $COLORTERM ==# 'gnome-terminal'
   execute "set t_kl=\<C-h>"
